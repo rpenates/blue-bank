@@ -7,5 +7,6 @@ import org.mongodb.kbson.ObjectId
 class Transaction : RealmObject {
     @PrimaryKey var id: ObjectId = ObjectId()
     var transactionDate: String = ""
+    var description: String = ""
     var amount: Double? = null
 }
