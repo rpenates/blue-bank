@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id 'io.realm.kotlin'
 }
 
 def currentDate = new Date()
@@ -75,6 +76,7 @@ dependencies {
 
     // Project dependencies
     implementation libs.gson
-    implementation "io.realm:realm-android:"
+    implementation 'io.realm.kotlin:library-base:2.0.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1'
 
 }
