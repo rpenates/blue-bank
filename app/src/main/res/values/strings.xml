@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BlueBank</string>
+    <string name="transaction_fab">transaction fab</string>
+    <string name="transaction_text">Transaccion</string>
 </resources>
