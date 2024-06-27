@@ -25,6 +25,11 @@ class BluebankApp: Application() {
 
     override fun onCreate() {
         super.onCreate()
+        initRealm()
+        checkFirstRun()
+    }
+
+    fun initRealm() {
         realm = Realm.open(
             configuration = RealmConfiguration.create(
                 schema = setOf(
