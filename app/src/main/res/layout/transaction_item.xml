@@ -1,0 +1,37 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/transaction_item"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/transaction_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Movimiento"
+            android:textSize="14sp"
+            android:layout_margin="8dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/transaction_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:text="$0"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
